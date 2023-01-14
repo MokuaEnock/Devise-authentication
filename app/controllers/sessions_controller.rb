@@ -14,4 +14,10 @@ class SessionsController < ApplicationController
 
     log_out_failure
   end
+
+  def log_out_success
+    render json: { message: "Yo are logged out." }, status: :ok
+  end
+
+  
 end
