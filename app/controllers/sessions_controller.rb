@@ -19,5 +19,7 @@ class SessionsController < ApplicationController
     render json: { message: "Yo are logged out." }, status: :ok
   end
 
-  
+  def log_out_failure
+    render json: { message: "Sorry nothing happened" }, status: :unauthorized 
+  end
 end
